@@ -1,0 +1,21 @@
+print("****************** CONSUMO DE COMBUSTÍVEL ******************")
+print("*************** DESENVOLVIDO POR PEDRO PARRO ***************")
+
+modeloCarro = input("MODELO CARRO: ")
+placa = input("PLACA: ")
+kmInicial = int(input("KM INICIAL: ")) 
+kmFinal = int(input("KM FINAL: "))
+valor = float(input("VALOR COMBUSTÍVEL R$ "))
+litros = int(input("LITROS ABASTECIDOS: "))
+media = round((kmFinal - kmInicial) / litros,2)
+valorGasto = float(valor * litros)
+
+print("************************* RESULTADO ************************")
+print("MODELO CARRO:",modeloCarro)
+print("MODELO CARRO:",placa)
+print("KM INICIAL:",kmInicial,"(km)")
+print("KM FINAL:",kmFinal,"(km)")
+print("KM PERCORRIDO:",int(kmFinal - kmInicial),"(km)")
+print("VALOR GASTO R$",round(valorGasto,2))
+
+print("Média de Consumo é:",media,"(km)")
